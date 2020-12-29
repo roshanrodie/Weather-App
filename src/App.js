@@ -1,8 +1,4 @@
 import React, { useState } from 'react';
-const api = {
-  key:"0c31dc574b08ab5592fc992ac79afe78" ,
-  base:"https://api.openweathermap.org/data/2.5/"
-}
 
 function App() {
   const[query, setQuery]= useState('');
@@ -40,7 +36,7 @@ const dateBuilder = (d) =>{
       ? ((weather.main.temp > 16)
       ? 'app warm'
       : 'app')
-      : 'app'}>
+      : 'def'}>
       <main> 
         <div className="search-box">
           <input type="text" className="search-bar" 
@@ -73,8 +69,8 @@ const dateBuilder = (d) =>{
           <span className="content">{weather.visibility} m</span>
           <span className="content"> Humudity :</span>
           <span className="content">{weather.main.humidity} %</span>
-          <span className="content"> Wind Speed :</span>
-          <span className="content">{weather.wind.speed} km/h</span>
+          <span className="content"> Wind Speed:</span>
+          <span className="content">{weather.wind.speed}km/h</span>
         </div>
       </div>
       ) : ('')}
