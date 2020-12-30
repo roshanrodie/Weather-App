@@ -2,6 +2,8 @@
   margin : 0;
   padding: 0;
   box-sizing: border-box;
+  max-width: 1024px;
+  max-height: 1366px;
 }
 
 body{
@@ -151,4 +153,15 @@ main{
   margin: 15px 5px;
   font-size: 4vw;
   
+}
+
+@media only screen and (min-width: 1024px){
+  *{
+    background-image: url("/src/img/pcdef.jpg");
+  
+   }
+
+  .search-box{
+    display: none;
+  }
 }
