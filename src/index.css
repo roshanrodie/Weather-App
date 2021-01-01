@@ -2,23 +2,11 @@
   margin : 0;
   padding: 0;
   box-sizing: border-box;
-  max-width: 1024px;
-  max-height: 1366px;
+  
 }
 
 body{
   font-family: 'monospace' , sans-serif;
-}
-
-.app{
-  background-image: url('/src/img/night.jpg');
-  background-size: cover;
-  background-position: bottom;
-  transition: 0.4s ease-out;
-}
-
-.app.warm{
-  background-image: url('/src/img/day.jpg');
 }
 
 .def{
@@ -27,6 +15,64 @@ body{
   background-position: bottom;
   transition: 0.4s ease-out;
 }
+
+.clear1{
+  background-image: url('/src/img/clear1.jpg');
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4s ease-out;
+}
+
+.clear2{
+  background-image: url('/src/img/clear2.jpg');
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4s ease-out;
+}
+
+.clear3{
+  background-image: url('/src/img/clear3.jpg');
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4s ease-out;
+}
+
+.rain{
+  background-image: url('/src/img/rain.jpg');
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4s ease-out;
+}
+
+.rain2{
+  background-image: url('/src/img/clear2.jpg');
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4s ease-out;
+}
+
+.smoke{
+  background-image: url('/src/img/smoke.jpg');
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4s ease-out;
+}
+
+.snow{
+  background-image: url('/src/img/snow.jpg');
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4s ease-out;
+}
+
+.snow2{
+  background-image: url('/src/img/snow2.jpg');
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4s ease-out;
+}
+
+
 
 main{
   min-height: 100vh;
@@ -161,7 +207,16 @@ main{
   
    }
 
-  .search-box{
+  .search-box {
+    display: none;
+  }
+  .location-box{
+    display: none;
+  }
+  .weather-box{
+    display: none;
+  }
+  .detailsbox{
     display: none;
   }
 }

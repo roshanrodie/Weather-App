@@ -30,13 +30,38 @@ const dateBuilder = (d) =>{
 
  return `${day} ${date} ${month} ${year}`
 }
+
+ function cond(){
+  if (typeof weather.main != "undefined"){
+    if (weather.weather[0].main==="Clear" && (Math.round(weather.main.temp))>35){
+      return "clear3"
+   }else if(weather.weather[0].main==="Clear" && (Math.round(weather.main.temp))>29){
+      return "clear2"
+   }else if(weather.weather[0].main==="Clear" && (Math.round(weather.main.temp))>16){
+      return "clear1"
+   }else if(weather.weather[0].main==="Rain" && (Math.round(weather.main.temp))>16){
+    return "rain"
+   }else if(weather.weather[0].main==="Rain" && (Math.round(weather.main.temp))<16){
+    return "rain2"
+   }else if(weather.weather[0].main==="Smoke"){
+    return "smoke"
+   }else if((Math.round(weather.main.temp))<=5){
+    return "snow2"
+   }else if((Math.round(weather.main.temp))>5){
+    return "snow"
+   }else{
+     return 'def'
+    }
+  
+
+
+} else{
+  return 'def'
+} 
+ } 
+
   return (
-    <div className={
-      (typeof weather.main != "undefined")
-      ? ((weather.main.temp > 16)
-      ? 'app warm'
-      : 'app')
-      : 'def'}>
+    <div className= {cond()}>
       <main> 
         <div className="search-box">
           <input type="text" className="search-bar" 
