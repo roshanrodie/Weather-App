@@ -72,6 +72,13 @@ body{
   transition: 0.4s ease-out;
 }
 
+.error{
+  background-image: url('/src/img/error.jpg');
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4s ease-out;
+}
+
 
 
 main{

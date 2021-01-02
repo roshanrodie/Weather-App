@@ -49,14 +49,12 @@ const dateBuilder = (d) =>{
     return "snow2"
    }else if((Math.round(weather.main.temp))>5){
     return "snow"
-   }else{
-     return 'def'
+   }else {
+     return "error";
     }
   
-
-
 } else{
-  return 'def'
+  return 'def';
 } 
  } 
 
